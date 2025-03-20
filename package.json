@@ -1,0 +1,26 @@
+{
+  "name": "npm-page",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "npm assignment page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvic89/npm-page.git"
+  },
+  "author": "Victor F",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvic89/npm-page/issues"
+  },
+  "homepage": "https://github.com/mvic89/npm-page#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
