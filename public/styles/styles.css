@@ -6,6 +6,11 @@ body {
     background-color: bisque;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+
+    min-height: 100vh;
+    background: url(/img/swiss-wallpaper.png);
+    background-size: cover;
+    background-position: center;
 }
 
 header {
@@ -102,10 +107,7 @@ nav a:focus {
     margin: 0;
 }
 
-
-
-
-
+/*Responsivness*/
 
 @media screen and (max-width: 790px) {
     .container-nav {
