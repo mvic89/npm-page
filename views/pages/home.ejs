@@ -9,86 +9,14 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="container container-nav">
-        <div class="site-title">
-            <h1 class="logotype">The Swiss School</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="" class="current-page">Home</a></li>
-                <li class="links0"><a href="">Artists</a></li>
-                <li><a href="">Typefaces</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('../partials/header.ejs') %>
     <main>
         <div class="container">
-            <div class="hero-section">
-                <div>
-                    <h1>Elevate your knowledge about Swiss Design</h1>
-                    <p>We explain the fundamentals and makes it visually pleasing</p>
-                    <button>Join us!</button>
-                </div>
-                <div class="hero-image">
-                    <img src="img/neue-grafik.jpg" alt="neue-grafik">
-                </div>
-            </div>
-            <div class="columns">
-                <div class="col-1">
-                    <h2>Swiss Design</h2>
-                    <p>
-                        A style of design that originated in Switzerland in the 1940s and 50s was the basis of much of the development of graphic design during the mid 20th century.
-                        Led by designers Josef Müller-Brockmann at the Zurich School of Arts and Krafts and Armin Hofmann at the Basel School of Design.
-                        Of the many contributions to develop from the two schools were the use of:
-                    </p>
-                    <ul>
-                        <li>Sans-serif typography</li>
-                        <li>Grids</li>
-                        <li>Assymetrical Layouts</li>
-                        <li>Typography & photography</li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <h2>Swiss style and its prototypes</h2>
-                    <p>
-                        The development of the Swiss style is associated with the formation of new principles in graphic design and is correlated with a number of prototypes, in particular, such as De Stijl, Russian constructivism, the Bauhaus school, International Typographic Style, etc. 
-                        Ernst Keller had a fundamental influence on the development of the Swiss school. Having started teaching at the School of Applied Sciences in Zürich in 1918, he outlined the basic principles of the future Swiss School, and also contributed to the formation of a whole generation of graphic designers. 
-                        The masters trained by Keller formed the basis of the Swiss school of graphic design. One of Keller's students was Josef Müller-Brockmann, who perfected the modular grid system and made it the basis of both the Swiss style and modern graphic design.
-                    </p>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="poster-image">
-                    <img src="img/poster-1.jpg" alt="">
-                    <p>Josep Müller-Brockmann, Auto Club of Switzerland Poster, 1955</p>
-                </div>
-                <div class="poster-image">
-                    <img src="img/poster-2.jpg" alt="">
-                    <p>Joseph Müller-Brockmann,  Zürich Town Hall Poster, 1955</p>
-                </div>
-                <div class="poster-image ">
-                    <img src="img/poster-3.jpg" alt="">
-                    <p>Joseph Müller-Brockmann,  1962</p>
-                </div>
-                <div class="poster-image ">
-                    <img src="img/poster-4.jpg" alt="">
-                    <p>Eugene and Max Lenz,  Sports Poster, 1958</p>
-                </div>
-            </div>
+            <%- include('../partials/hero.ejs') %>
+            <%- include('../partials/textcolumns.ejs') %>
+            <%- include('../partials/imagecolumns.ejs') %>
         </div>
-        
     </main>
-    <footer class="footer-container">
-        <nav>
-            <ul class="footer-links">
-                <li class="links1"><a href="" class="current-page">Home</a></li>
-                <li class="links2"><a href="">Artists</a></li>
-                <li class="links3"><a href="">Typefaces</a></li>
-            </ul>
-        </nav>
-        <div class="footer-bottom">
-            <p class="copy">Copyright &copy; 2024; Created by Victor</p>
-        </div>
-    </footer>
+    <%- include('../partials/footer.ejs') %>
 </body>
 </html>
