@@ -1,0 +1,9 @@
+.hero-section {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
