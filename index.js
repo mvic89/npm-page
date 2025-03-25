@@ -11,7 +11,9 @@ app.use(express.static('public'))
 app.get('/', (req, res) => {
     // res.send('Hello from Homes Page!')
     res.render('pages/home.ejs', {
-        logotype: 'The Swiss Design School'
+        herotitle: 'Elevate your knowledge about Swiss Design',
+        herosubtitle: 'We explain the fundamentals and makes it visually pleasing',
+        cta: 'Join us!'
     })
 })
 
