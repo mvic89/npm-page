@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: bisque;
+    /* background-color: bisque; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
 
@@ -26,7 +26,7 @@ header {
 .logotype {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-    color: #143774;
+    color: #0e0e0e;
     font-size: 2rem;
     margin: 0;
 }
@@ -36,6 +36,7 @@ header {
     max-width: 1200px;
     border: 1px solid #333;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .container-nav {
@@ -65,7 +66,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: #1792d2;
+    color: #30e0d8;
 }
 
 .current-page {
