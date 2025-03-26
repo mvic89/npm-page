@@ -5,6 +5,9 @@ const designerRouter = express.Router();
 designerRouter.get('/', (req, res) => {
     // res.send('Hello from the Designer page')
     res.render('pages/designer.ejs', {
+        sidebaritems1: 'Ernst Keller',
+        sidebaritems2: 'Armin Hofmann',
+        sidebaritems3: 'Josef Müller-Brockmann'
         
     })
 })
