@@ -8,7 +8,8 @@ typefaceRouter.get('/', (req, res) => {
         sidebaritems1: 'Akzidenz-Grotesk',
         sidebaritems2: 'Univers',
         sidebaritems3: 'Helvetica',
-        pageType: 'typefaces'
+        pageType: 'typefaces',
+        containerClass: 'designcontainer'
     })
 })
 
