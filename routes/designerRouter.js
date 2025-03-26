@@ -3,7 +3,10 @@ import express from 'express'
 const designerRouter = express.Router();
 
 designerRouter.get('/', (req, res) => {
-    res.send('Hello from the Designer page')
+    // res.send('Hello from the Designer page')
+    res.render('pages/designer.ejs', {
+        
+    })
 })
 
 designerRouter.get('/ernstkeller', (req, res) => {
