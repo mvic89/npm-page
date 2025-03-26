@@ -11,6 +11,9 @@ body {
     background: url(/img/swiss-wallpaper.png);
     background-size: cover;
     background-position: center;
+
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -84,6 +87,7 @@ nav a:focus {
     max-width: 1200px;
     border: 1px solid #333;
     margin: 0 auto;
+    margin-top: auto;
 }
 
 .footer-bottom {
