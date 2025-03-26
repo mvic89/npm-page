@@ -1,0 +1,18 @@
+<% if (locals.pageType) {
+    if (pageType === 'designers') { %>
+        <div>
+            <h2>Welcome to the Designers Page</h2>
+            <p>Feel free to read all about the designers</p>    
+        </div>
+    <% } else if (pageType === 'typefaces') { %>
+        <div>
+            <h2>Welcome to the Typefaces Page</h2>
+            <p>Feel free to read all about the Typefaces</p>    
+        </div>
+    <% } else { %> //Tried to include the hero.ejs partial down below but it didn't work :(
+        <div>
+            <h2>Welcome to the Swiss Design Page</h2>
+            <p>Here you can read all about Swiss Design</p>    
+        </div>
+    <% } %> 
+<% } %>

@@ -7,7 +7,9 @@ designerRouter.get('/', (req, res) => {
     res.render('pages/designer.ejs', {
         sidebaritems1: 'Ernst Keller',
         sidebaritems2: 'Armin Hofmann',
-        sidebaritems3: 'Josef Müller-Brockmann'
+        sidebaritems3: 'Josef Müller-Brockmann',
+        pageType: 'designers',
+        containerClass: 'designcontainer'
         
     })
 })
