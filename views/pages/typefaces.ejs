@@ -13,6 +13,17 @@
         <div class="<%= containerClass %>">
             <%- include('../partials/sidebarmenu.ejs') %>
             <%- include('../partials/intropage.ejs') %>
+
+            <% if (locals.typeface) { %>
+                <div class="designerclass">
+                    <h2><%= typeface.name %></h2>
+                    <h4>Designed by: <%= typeface.creator %> </h4>
+                    <h4>Classification: <%= typeface.classification %> </h4>
+                    <div>
+                        <p><%= typeface.description %></p>
+                    </div>
+                </div>
+            <% } %>
         </div>
     </main>
     <%- include('../partials/footer.ejs') %>
