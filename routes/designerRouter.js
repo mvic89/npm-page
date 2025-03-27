@@ -4,8 +4,8 @@ import Designers from '../data/designers.js';
 const designerRouter = express.Router();
 
 designerRouter.get('/', (req, res) => {
-    // res.send('Hello from the Designer page')
     res.render('pages/designer.ejs', {
+        title: 'Designers Page',
         sidebarlinks1: '/designers/ernstkeller',
         sidebarlinks2: '/designers/arminhofmann',
         sidebarlinks3: '/designers/jmb',
@@ -19,16 +19,16 @@ designerRouter.get('/', (req, res) => {
         currentPage3: 'no-current-page',
         sidebarCurrent1: 'no-current-page',
         sidebarCurrent2: 'no-current-page',
-        sidebarCurrent3: 'no-current-page'
+        sidebarCurrent3: 'no-current-page',
 
         
     })
 })
 
 designerRouter.get('/ernstkeller', (req, res) => {
-    // res.send('This is the Ernst Keller page!')
     let keller = Designers[0]
     res.render('pages/designer.ejs', {
+        title: 'Kellers Page',
         sidebarlinks1: '/designers/ernstkeller',
         sidebarlinks2: '/designers/arminhofmann',
         sidebarlinks3: '/designers/jmb',
@@ -47,9 +47,9 @@ designerRouter.get('/ernstkeller', (req, res) => {
 })
 
 designerRouter.get('/arminhofmann', (req, res) => {
-    // res.send('This is the Armin Hofmann page!')
     let armin = Designers[1]
     res.render('pages/designer.ejs', {
+        title: 'Hofmanns Page',
         sidebarlinks1: '/designers/ernstkeller',
         sidebarlinks2: '/designers/arminhofmann',
         sidebarlinks3: '/designers/jmb',
@@ -68,9 +68,9 @@ designerRouter.get('/arminhofmann', (req, res) => {
 })
 
 designerRouter.get('/jmb', (req, res) => {
-    // res.send('This is the Josef Müller-Brockmann page!')
     let jmb = Designers[2]
     res.render('pages/designer.ejs', {
+        title: 'JMBs Page',
         sidebarlinks1: '/designers/ernstkeller',
         sidebarlinks2: '/designers/arminhofmann',
         sidebarlinks3: '/designers/jmb',

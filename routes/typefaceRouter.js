@@ -4,8 +4,8 @@ import Typefaces from '../data/typefaces.js';
 const typefaceRouter = express.Router();
 
 typefaceRouter.get('/', (req, res) => {
-    // res.send('Hello from the Typefaces page')
     res.render('pages/typefaces.ejs', {
+        title: 'Typefaces Page',
         sidebarlinks1: '/typefaces/akzidenzgrotesk',
         sidebarlinks2: '/typefaces/univers',
         sidebarlinks3: '/typefaces/helvetica',
@@ -24,9 +24,9 @@ typefaceRouter.get('/', (req, res) => {
 })
 
 typefaceRouter.get('/akzidenzgrotesk', (req, res) => {
-    // res.send('This is the Akzidens-Grotesk page!')
     let akzidenz = Typefaces[0]
     res.render('pages/typefaces.ejs', {
+        title: 'Akzidenz-Grotesk Page',
         sidebarlinks1: '/typefaces/akzidenzgrotesk',
         sidebarlinks2: '/typefaces/univers',
         sidebarlinks3: '/typefaces/helvetica',
@@ -45,9 +45,9 @@ typefaceRouter.get('/akzidenzgrotesk', (req, res) => {
 })
 
 typefaceRouter.get('/univers', (req, res) => {
-    // res.send('This is the Univers page!')
     let univers = Typefaces[1]
     res.render('pages/typefaces.ejs', {
+        title: 'Univers Page',
         sidebarlinks1: '/typefaces/akzidenzgrotesk',
         sidebarlinks2: '/typefaces/univers',
         sidebarlinks3: '/typefaces/helvetica',
@@ -66,9 +66,9 @@ typefaceRouter.get('/univers', (req, res) => {
 })
 
 typefaceRouter.get('/helvetica', (req, res) => {
-    // res.send('This is the Helvetica page!')
     let helvetica = Typefaces[2]
     res.render('pages/typefaces.ejs', {
+        title: 'Helvetica Page',
         sidebarlinks1: '/typefaces/akzidenzgrotesk',
         sidebarlinks2: '/typefaces/univers',
         sidebarlinks3: '/typefaces/helvetica',
