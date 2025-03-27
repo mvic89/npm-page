@@ -19,3 +19,8 @@
     align-items: flex-start;
 }
 
+.designerclass {
+    display: flex;
+    flex-direction: column;
+}
+

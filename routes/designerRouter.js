@@ -29,11 +29,27 @@ designerRouter.get('/ernstkeller', (req, res) => {
 })
 
 designerRouter.get('/arminhofmann', (req, res) => {
-    res.send('This is the Armin Hofmann page!')
+    // res.send('This is the Armin Hofmann page!')
+    let armin = Designers[1]
+    res.render('pages/designer.ejs', {
+        sidebaritems1: 'Ernst Keller',
+        sidebaritems2: 'Armin Hofmann',
+        sidebaritems3: 'Josef Müller-Brockmann',
+        containerClass: 'designcontainer',
+        designer: armin
+    })
 })
 
 designerRouter.get('/jmb', (req, res) => {
-    res.send('This is the Josef Müller-Brockmann page!')
+    // res.send('This is the Josef Müller-Brockmann page!')
+    let jmb = Designers[2]
+    res.render('pages/designer.ejs', {
+        sidebaritems1: 'Ernst Keller',
+        sidebaritems2: 'Armin Hofmann',
+        sidebaritems3: 'Josef Müller-Brockmann',
+        containerClass: 'designcontainer',
+        designer: jmb
+    })
 })
 
 export default designerRouter;

@@ -15,10 +15,13 @@
             <%- include('../partials/intropage.ejs') %>
 
             <% if (locals.designer) { %>
-                <h2><%= designer.name %></h2>
-                <h4>Born: <%= designer.born %></h4>
-                <div>
-                    <p><%= designer.description %></p>
+                <div class="designerclass">
+                    <h2><%= designer.name %></h2>
+                    <h4>Born: <%= designer.born %></h4>
+                    <h4>Dead: <%= designer.dead %></h4>
+                    <div>
+                        <p><%= designer.description %></p>
+                    </div>
                 </div>
             <% } %>
         </div>
