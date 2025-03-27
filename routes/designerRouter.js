@@ -1,4 +1,5 @@
-import express from 'express'
+import express from 'express';
+import Designers from '../data/designers.js';
 
 const designerRouter = express.Router();
 
@@ -9,13 +10,22 @@ designerRouter.get('/', (req, res) => {
         sidebaritems2: 'Armin Hofmann',
         sidebaritems3: 'Josef Müller-Brockmann',
         pageType: 'designers',
-        containerClass: 'designcontainer'
+        containerClass: 'designcontainer',
+
         
     })
 })
 
 designerRouter.get('/ernstkeller', (req, res) => {
-    res.send('This is the Ernst Keller page!')
+    // res.send('This is the Ernst Keller page!')
+    let keller = Designers[0]
+    res.render('pages/designer.ejs', {
+        sidebaritems1: 'Ernst Keller',
+        sidebaritems2: 'Armin Hofmann',
+        sidebaritems3: 'Josef Müller-Brockmann',
+        containerClass: 'designcontainer',
+        designer: keller
+    })
 })
 
 designerRouter.get('/arminhofmann', (req, res) => {

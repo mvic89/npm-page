@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/subpages.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/subpages.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,6 +13,14 @@
         <div class="<%= containerClass %>">
             <%- include('../partials/sidebarmenu.ejs') %>
             <%- include('../partials/intropage.ejs') %>
+
+            <% if (locals.designer) { %>
+                <h2><%= designer.name %></h2>
+                <h4>Born: <%= designer.born %></h4>
+                <div>
+                    <p><%= designer.description %></p>
+                </div>
+            <% } %>
         </div>
     </main>
     <%- include('../partials/footer.ejs') %>
