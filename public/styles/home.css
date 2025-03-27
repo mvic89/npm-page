@@ -51,3 +51,49 @@ button:hover {
 .poster-image {
     width: 25%;
 }
+
+@media screen and (max-width: 690px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-section div h1,
+    .hero-section div p {
+        text-align: center;
+    }
+
+
+    .hero-div,
+    .hero-div button {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .columns {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col-1 {
+        width: 100%;
+        
+    }
+    
+    .col-2 {
+        width: 100%;
+    
+    }
+
+    .poster-image,
+    .poster-image p {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+
+}
