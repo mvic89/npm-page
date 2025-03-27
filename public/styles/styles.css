@@ -26,13 +26,16 @@ header {
     align-items: center;
 }
 
-.logotype {
+.logotype,
+.logotype a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
     color: #0e0e0e;
+    text-decoration: none;
     font-size: 2rem;
     margin: 0;
 }
+
 
 .container {
     width: 90%;

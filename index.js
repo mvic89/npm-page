@@ -27,7 +27,10 @@ app.get('/', (req, res) => {
         col2paragraph: `The development of the Swiss style is associated with the formation of new principles in graphic design and is correlated with a number of prototypes, in particular, such as De Stijl, Russian constructivism, the Bauhaus school, International Typographic Style, etc. 
             Ernst Keller had a fundamental influence on the development of the Swiss school. Having started teaching at the School of Applied Sciences in Zürich in 1918, he outlined the basic principles of the future Swiss School, and also contributed to the formation of a whole generation of graphic designers. 
             The masters trained by Keller formed the basis of the Swiss school of graphic design. One of Keller's students was Josef Müller-Brockmann, who perfected the modular grid system and made it the basis of both the Swiss style and modern graphic design.`,
-        containerClass: 'container'
+        containerClass: 'container',
+        currentPage1: 'current-page',
+        currentPage2: 'no-current-page',
+        currentPage3: 'no-current-page'
     })
 })
 

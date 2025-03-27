@@ -13,7 +13,13 @@ typefaceRouter.get('/', (req, res) => {
         sidebaritems2: 'Univers',
         sidebaritems3: 'Helvetica',
         pageType: 'typefaces',
-        containerClass: 'designcontainer'
+        containerClass: 'designcontainer',
+        currentPage1: 'no-current-page',
+        currentPage2: 'no-current-page',
+        currentPage3: 'current-page',
+        sidebarCurrent1: 'no-current-page',
+        sidebarCurrent2: 'no-current-page',
+        sidebarCurrent3: 'no-current-page'
     })
 })
 
@@ -27,6 +33,12 @@ typefaceRouter.get('/akzidenzgrotesk', (req, res) => {
         sidebaritems1: 'Akzidenz-Grotesk',
         sidebaritems2: 'Univers',
         sidebaritems3: 'Helvetica',
+        currentPage1: 'no-current-page',
+        currentPage2: 'no-current-page',
+        currentPage3: 'current-page',
+        sidebarCurrent1: 'current-page',
+        sidebarCurrent2: 'no-current-page',
+        sidebarCurrent3: 'no-current-page',
         containerClass: 'designcontainer',
         typeface: akzidenz
     })
@@ -42,6 +54,12 @@ typefaceRouter.get('/univers', (req, res) => {
         sidebaritems1: 'Akzidenz-Grotesk',
         sidebaritems2: 'Univers',
         sidebaritems3: 'Helvetica',
+        currentPage1: 'no-current-page',
+        currentPage2: 'no-current-page',
+        currentPage3: 'current-page',
+        sidebarCurrent1: 'no-current-page',
+        sidebarCurrent2: 'current-page',
+        sidebarCurrent3: 'no-current-page',
         containerClass: 'designcontainer',
         typeface: univers
     })
@@ -57,6 +75,12 @@ typefaceRouter.get('/helvetica', (req, res) => {
         sidebaritems1: 'Akzidenz-Grotesk',
         sidebaritems2: 'Univers',
         sidebaritems3: 'Helvetica',
+        currentPage1: 'no-current-page',
+        currentPage2: 'no-current-page',
+        currentPage3: 'current-page',
+        sidebarCurrent1: 'no-current-page',
+        sidebarCurrent2: 'no-current-page',
+        sidebarCurrent3: 'current-page',
         containerClass: 'designcontainer',
         typeface: helvetica
     })
