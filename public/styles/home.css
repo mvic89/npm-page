@@ -52,7 +52,7 @@ button:hover {
     width: 25%;
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 790px) {
     .hero-section {
         display: flex;
         flex-direction: column;
