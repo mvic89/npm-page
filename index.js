@@ -1,8 +1,12 @@
 import express from 'express';
 import typefaceRouter from './routes/typefaceRouter.js';
 import designerRouter from './routes/designerRouter.js';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
+
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT;
 
 app.set('view engine', 'ejs')
 
